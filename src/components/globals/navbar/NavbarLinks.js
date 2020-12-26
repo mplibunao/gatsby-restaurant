@@ -45,6 +45,7 @@ const NavbarLinks = ({ navbarOpen }) => {
 const LinkWrapper = styled.ul`
   height: ${({ open }) => (open ? "152px" : "0px")};
   overflow: hidden;
+  ${styles.transObject({ time: "1s" })};
 
   li {
     list-style-type: none;
@@ -58,12 +59,23 @@ const LinkWrapper = styled.ul`
     font-weight: 700;
     text-transform: capitalize;
     cursor: pointer;
-    transition: ${styles.transDefault};
+    ${styles.transDefault};
 
     &:hover {
       background: ${styles.colors.mainGrey};
       color: ${styles.colors.mainYellow};
       padding: 0.5rem 1rem 0.5rem 1.3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+
+    .nav-link:hover {
+      background: ${styles.colors.mainWhite};
+      padding: 0.5rem 1rem;
     }
   }
 `
