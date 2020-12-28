@@ -1,14 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { PageHeader, Banner } from "../utils"
+import img from "../images/bcg/menuBcg.jpeg"
 
-const AboutPage = () => {
+const MenuPage = () => {
   return (
     <Layout>
       <SEO title="Menu" />
-      <h3>this is the menu page</h3>
+      <PageHeader img={img}>
+        <Banner title="menu" subtitle="let's dig in" />
+      </PageHeader>
     </Layout>
   )
 }
 
-export default AboutPage
+export default MenuPage

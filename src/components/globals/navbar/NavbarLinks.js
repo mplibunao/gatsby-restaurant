@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { styles } from "../../../utils"
 
 const NavbarLinks = ({ navbarOpen }) => {
-  const [links, setLinks] = useState([
+  const [links] = useState([
     {
       id: 0,
       path: "/",

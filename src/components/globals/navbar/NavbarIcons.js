@@ -4,7 +4,7 @@ import { styles } from "../../../utils"
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa"
 
 const NavbarIcons = () => {
-  const [icons, setIcons] = useState([
+  const [icons] = useState([
     {
       id: 1,
       icon: <FaFacebook className="icon facebook-icon" />,
